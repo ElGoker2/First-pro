@@ -25,6 +25,13 @@ header h1 {
     display: none;
 }
 
+.set>button{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 
 header div {
@@ -44,6 +51,7 @@ header>div a {
     font-weight: bold;
     font-size: 18px;
     position: relative;
+    
 }
 
 header>div a::before {
@@ -962,11 +970,26 @@ input:hover {
     }
 
     header>div a {
-        font-size: 14px;
-        margin: 5px;
-        display: none;
+        display: none; /* اخفي الروابط */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 10px;
 
     }
+
+
+    .set {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    
+    
 
     .parent1 {
         flex-direction: column;
@@ -1036,9 +1059,9 @@ input:hover {
         width: 90%;
     }
 
-    .set {
-        display: inline-flex;
-    }
+
+
+    
 
     .footer {
         grid-template-columns: 100%;
