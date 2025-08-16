@@ -527,7 +527,14 @@ header>div a:hover::before {
 .parent4 {
     height: 460px;
     padding-bottom: 30px;
+    flex: 0 0 auto;
+    /* يخلي عرضه ثابت وماينزلش */
+    /* عرض ثابت */
 
+}
+
+.parent4>div{
+    flex: 0 0 auto;  /* يخلي عرضه ثابت وماينزلش */
 }
 
 .parent4>:nth-child(1) {
@@ -623,12 +630,27 @@ header>div a:hover::before {
 
 .card3-2> {
     display: grid;
-    grid-template-columns: repeat(4,30px);
+    grid-template-columns: repeat(4, 30px);
     margin: 0px 10px;
 }
 
-.card3-2>img{
+.card3-2>h1 {
     width: 50px;
+    margin: 0px 10px;
+    font-size: 40px;
+    filter: grayscale(100%);
+    transition: filter .25s ease;
+}
+
+
+.card3-2>h1:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
 }
 
 
